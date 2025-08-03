@@ -1,0 +1,17 @@
+{
+  "name": "09_backend",
+  "version": "1.0.0",
+  "description": "This is my first backend project by hitesh choudhary - YouTube",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [
+    "chai",
+    "javascript",
+    "backend"
+  ],
+  "author": "Yuvraj Kumar",
+  "license": "ISC"
+}
