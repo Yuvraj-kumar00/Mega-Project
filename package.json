@@ -13,5 +13,9 @@
     "backend"
   ],
   "author": "Yuvraj Kumar",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  }
 }
