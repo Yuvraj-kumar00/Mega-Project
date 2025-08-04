@@ -42,13 +42,14 @@ const registration = asyncHandler( async (req, res) => {
     if (!avatarLocalPath) {
         throw new ApiError(400, "avatar file is required for multer")
     };
-
+   
+  
     const avatar = await uploadOnCloudinary(avatarLocalPath);
     const coverImage = await uploadOnCloudinary(coverImageLocalPath);
-    console.log(avatar, coverImage);
+   console.log(avatar, coverImage);
 
     if (!avatar) {
-        throw new ApiError(400, "avatarLocalPath is required for cloudinary")
+        throw new ApiError(400, "something went wrong while uploading avatar on cloudinary")
     };
 
     const user = await User.create({
